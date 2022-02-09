@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give age</title>
+    <link rel="stylesheet" href="giveage.css">
+</head>
+<body>
+    
+
+<div class="header">
+    <h1> Age In Years</h1>
+
+</div>
+
+<div class="but-cont">
+
+    <button class="butone" onclick="ecrire()">Inform</button>
+    <button class="buttwo">Help</button>
+
+</div>
+<hr>
+<div class="result-cont" id="icii">
+    
+    <div id="canva">
+       
+    </div>
+</div>
+    <script>
+
+        function ecrire(){
+            let question = prompt("What year are you born?");
+            let conversion = 2021 - question;
+            let canvas = document.getElementById('canva');
+            canvas.innerHTML = " You are turning "+ conversion + " this year";
+            canvas.style.fontFamily="arial";
+            canvas.style.color="white";
+            canvas.style.fontSize="20px";
+        }
+      
+
+
+
+
+    </script>
+
+
+</body>
+</html>
